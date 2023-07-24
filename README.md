@@ -31,3 +31,26 @@ function exerciseOption(OptionType optionType, uint256 amount)
 
 **OptionType**: Call / Put
 
+## Withdraw strike asset
+
+Only the admin can withdraw the strike asset for a specific amount.
+
+```js
+function withdrawStrikeAsset(uint256 amount)
+```
+
+## Withdraw underlying asset
+
+Only the admin can withdraw the underlying asset for a specific amount.
+
+```js
+function withdrawUnderlyingAsset(uint256 amount)
+```
+
+## Set Strike price
+
+Only the admin can set the price for the strike price (in a next version, with an oracle).
+
+```js
+function setStrikePrice(uint256 newStrikePrice)
+```
